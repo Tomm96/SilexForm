@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+    <h1>
+        Duomenų keitimas
+    </h1>
+    <div class="alert alert-info" role="alert">
+        <b>Keičiamo nario ID:</b> {{ cuser.id }}
+    </div>
+    <form action="#" method="post">
+        {{ form_widget(form) }}
+
+        <input type="submit" name="submit" value="Keisti"/>
+    </form>
+{% endblock %}
